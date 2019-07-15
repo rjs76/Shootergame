@@ -95,8 +95,21 @@ public class movement : MonoBehaviour
 
         if (Input.GetKeyDown (Fire1) && Time.time > nextFire)
         {
-            nextFire = Time.time + fireRate;
-            fire();
+            if (weapon1)
+            {
+                nextFire = Time.time + fireRate;
+                fire();
+            }
+            else if (weapon2)
+            {
+                nextFire = Time.time + (fireRate+ 2.5f);
+                fire();
+            }
+            else if (weapon3)
+            {
+                nextFire = Time.time + (fireRate- 0.4f);
+                fire();
+            }
         }
         //animator
        // animator.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
@@ -161,12 +174,12 @@ public class movement : MonoBehaviour
             bulletPos = transform.position;
             if (facingRight)
             {
-                bulletPos += new Vector2(+1f, -0.5f);
+                bulletPos += new Vector2(+1f, -0.1f);
                 Instantiate(bulletToRight2, bulletPos, Quaternion.identity);
             }
             else
             {
-                bulletPos += new Vector2(-1f, -0.5f);
+                bulletPos += new Vector2(-1f, -0.1f);
                 Instantiate(bulletToLeft2, bulletPos, Quaternion.identity);
             }
         }
