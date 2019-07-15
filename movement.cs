@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
+    float velx;
+    float vely;
+    bool facingRight= true;
+
     private Rigidbody2D rb2d;
     public int speed;
     public float jumpForce;
@@ -15,12 +19,18 @@ public class movement : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode Jump;
- 
+    public KeyCode Fire1;
+
     public Transform spawnpoint;
 
     public Transform groundCheckPoint;
-   // public float groundCheckRadius;
-   // public LayerMask whatisGround;
+    // public float groundCheckRadius;
+    // public LayerMask whatisGround;
+
+    public GameObject bulletToRight, bulletToLeft;
+    Vector2 bulletPos;
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
 
     void Start()
     {
@@ -39,10 +49,15 @@ public class movement : MonoBehaviour
         if (Input.GetKey(left))
         {
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+          //  facingRight = true;
+
         }
         else if (Input.GetKey(right))
         {
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+          //  facingRight = false;
         }
         else
         {
@@ -54,6 +69,11 @@ public class movement : MonoBehaviour
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
         }
 
+        if (Input.GetKeyDown (Fire1) && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            fire();
+        }
         //animator
        // animator.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
@@ -68,6 +88,50 @@ public class movement : MonoBehaviour
         //}
 
     }
+    //which direcction the character is facing 
+    void LateUpdate()
+    {
+        Vector3 localScale = transform.localScale;
+        if(velx > 0)
+        {
+            
+                facingRight = true;
+            
+        }
+        else if (velx < 0)
+        {
+           
+                facingRight = false;
+          
+        }
+        if((facingRight &&(localScale.x <0))|| ((!facingRight) &&(localScale.x > 0)))
+        {
+            localScale.x *= -1;
+        }
+
+        transform.localScale = localScale;
+
+    }
+
+
+
+    void fire()
+    {
+        bulletPos = transform.position;
+        if (facingRight)
+        {
+            bulletPos += new Vector2(+1f, -0.5f);
+            Instantiate(bulletToRight, bulletPos, Quaternion.identity);
+        }
+        else  
+        {
+            bulletPos += new Vector2(-1f, -0.5f);
+            Instantiate(bulletToLeft, bulletPos, Quaternion.identity);
+        }
+    }
+
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 

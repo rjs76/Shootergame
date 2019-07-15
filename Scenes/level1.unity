@@ -9882,8 +9882,14 @@ MonoBehaviour:
   left: 97
   right: 100
   Jump: 119
+  Fire1: 32
   spawnpoint: {fileID: 1039232692}
   groundCheckPoint: {fileID: 0}
+  bulletToRight: {fileID: 1854584023786104291, guid: 12454197508a8304e9b066e6537cecf2,
+    type: 3}
+  bulletToLeft: {fileID: 3811171057410936007, guid: a8bade38ca2bc6e49b8844c4a1c381c3,
+    type: 3}
+  fireRate: 0.5
 --- !u!4 &1825087964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8434625976470853433, guid: 76a5b05a163026243b6c2458fe1d7867,
@@ -10957,6 +10963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210934098858192093, guid: edaf4c97305854347bbbba76c8f1b3e0,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edaf4c97305854347bbbba76c8f1b3e0, type: 3}

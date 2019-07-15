@@ -1,0 +1,688 @@
+fileFormatVersion: 2
+guid: 03ad582f659dd98478a3e4e8be9f0ae7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6699763208685157189
+    second: energyblasts2_0
+  - first:
+      213: 37970616070441549
+    second: energyblasts2_1
+  - first:
+      213: 494253869691020161
+    second: energyblasts2_2
+  - first:
+      213: -6376349693390385260
+    second: energyblasts2_3
+  - first:
+      213: -8666442262311622158
+    second: energyblasts2_4
+  - first:
+      213: -3481545108257569705
+    second: energyblasts2_5
+  - first:
+      213: -2187134224247491220
+    second: energyblasts2_6
+  - first:
+      213: -1816282102305153433
+    second: energyblasts2_7
+  - first:
+      213: -3215283361918411886
+    second: energyblasts2_8
+  - first:
+      213: -2682288912076109206
+    second: energyblasts2_9
+  - first:
+      213: 4658984293849071393
+    second: energyblasts2_10
+  - first:
+      213: 5296373956828625227
+    second: energyblasts2_11
+  - first:
+      213: -8203810127041838218
+    second: energyblasts2_12
+  - first:
+      213: -7957062956790499253
+    second: energyblasts2_13
+  - first:
+      213: 308260433565084504
+    second: energyblasts2_14
+  - first:
+      213: -7267354468778663589
+    second: energyblasts2_15
+  - first:
+      213: 985265485687098825
+    second: energyblasts2_16
+  - first:
+      213: -8426502324345973801
+    second: energyblasts2_17
+  - first:
+      213: 8198628347997261559
+    second: energyblasts2_18
+  - first:
+      213: 9179862341166371653
+    second: energyblasts2_19
+  - first:
+      213: -1088948613643837432
+    second: energyblasts2_20
+  - first:
+      213: -2516437945799740378
+    second: energyblasts2_21
+  - first:
+      213: -2809758514587395904
+    second: energyblasts2_22
+  - first:
+      213: -733306525393441368
+    second: energyblasts2_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: energyblasts2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb71d2e54e017bc42b1ec0afd1e8c2fc
+      internalID: 6699763208685157189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 435
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cc836fd652b704281742b384abb819
+      internalID: 37970616070441549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 425
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a64bd69f20ed12438fcb7d92d8722a7
+      internalID: 494253869691020161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 425
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7965fed7b26bbd24f9d2f2453dec86da
+      internalID: -6376349693390385260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 80
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa0830b39b1c3242a9bf38cf8048b4a
+      internalID: -8666442262311622158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 370
+        width: 87
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b15c8d395fd847418751b7ed5d4d334
+      internalID: -3481545108257569705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 376
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c922887e2c78f6408a0b66b4c03265d
+      internalID: -2187134224247491220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 395
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374889c8f1d2b4c4180da59a2a554a0d
+      internalID: -1816282102305153433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85046f5eba0589d4a80bed811f2f081b
+      internalID: -3215283361918411886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 265
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928ac42a978cf414fb7fbcea24bd2208
+      internalID: -2682288912076109206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 265
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3877d0449145a2945bd91b36b79099c4
+      internalID: 4658984293849071393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 280
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ff15bd4a7e5354d8cfb3be4b58dfd4
+      internalID: 5296373956828625227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beba0e0df3bcd645a5a6c00ef472bc0
+      internalID: -8203810127041838218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 185
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816b1779cb68aed40a1567759844c39f
+      internalID: -7957062956790499253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 203
+        width: 89
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9460dd75dcf2c284782000fcf21aa8a2
+      internalID: 308260433565084504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 185
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c426caa42afa2f047857e52533977b41
+      internalID: -7267354468778663589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6498ae73d3f40488b831f5dc8006d0
+      internalID: 985265485687098825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 105
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feaf6000f85558e488e7207f0e6d5ca6
+      internalID: -8426502324345973801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 129
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51a9a1c5f3d0734fb72fa797d17a469
+      internalID: 8198628347997261559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 126
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b236d5a98d88b4a9c2042f0592d6ff
+      internalID: 9179862341166371653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_20
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 3
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5475f499d0ffc5c4c84de83c579dc4b3
+      internalID: -1088948613643837432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 30
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51347f2524f31944bab5a452666fd66
+      internalID: -2516437945799740378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 84
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4ccf5dea56b294690e36d3882d8369
+      internalID: -2809758514587395904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyblasts2_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 42
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e4d4529e3ffb042adc77e3d4a5032b
+      internalID: -733306525393441368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5d31fc429acb46e4d9e1f6fa7e7af01f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
