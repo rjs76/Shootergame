@@ -9864,6 +9864,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 249901980224593735}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1812749649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8872888418960660101, guid: edaf4c97305854347bbbba76c8f1b3e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 249901980224593735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1812749650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11045,6 +11051,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80fec2e1b14ba0349a537107ceb0d943, type: 3}
+--- !u!1 &4352753563351300437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4352753563351300437, guid: befe603be5a5ad744a283282deabcf91,
+    type: 3}
+  m_PrefabInstance: {fileID: 6147020702421843443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4352753563351300439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352753563351300437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7178dd2ddc477ca46a6a34d2604f32b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  Stoppingdistance: 5
+  retreatDistance: 3
+  Player: {fileID: 1812749649}
 --- !u!1001 &6147020702421843443
 PrefabInstance:
   m_ObjectHideFlags: 0

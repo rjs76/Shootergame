@@ -4,18 +4,37 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float speed;
+    public float Stoppingdistance;
+    public float retreatDistance;
+
+    public Transform Player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        if(Vector2.Distance(transform.position, Player.position)> Stoppingdistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+        }
+        else if (Vector2.Distance(transform.position, Player.position) < Stoppingdistance && Vector2.Distance(transform.position, Player.position) > retreatDistance)
+        {
+            transform.position = this.transform.position;
+        }
+        else if (Vector2.Distance(transform.position, Player.position)< retreatDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, -speed * Time.deltaTime);
+        }
 
+
+    }
+    /**
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("blast"))
@@ -24,5 +43,5 @@ public class Enemy : MonoBehaviour
         }
             
     }
-
+    */
 }
