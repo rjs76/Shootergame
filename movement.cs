@@ -21,13 +21,20 @@ public class movement : MonoBehaviour
     public KeyCode Jump;
     public KeyCode Fire1;
 
+    public KeyCode Firstweapon;
+    public KeyCode Secondweapon;
+    public KeyCode Thirdweapon;
+
     public Transform spawnpoint;
 
     public Transform groundCheckPoint;
     // public float groundCheckRadius;
     // public LayerMask whatisGround;
 
-    public GameObject bulletToRight, bulletToLeft;
+    public GameObject bulletToRight, bulletToLeft, bulletToRight2, bulletToLeft2, bulletToRight3, bulletToLeft3;
+    bool weapon1 = true;
+    bool weapon2;
+    bool weapon3; 
     Vector2 bulletPos;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
@@ -40,7 +47,24 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKey(Firstweapon))
+        {
+             weapon1 = true;
+             weapon2 = false;
+             weapon3 = false;
+        }
+        else if (Input.GetKey(Secondweapon))
+        {
+             weapon1 = false;
+             weapon2 = true;
+             weapon3 = false;
+        }
+        else if (Input.GetKey(Thirdweapon))
+        {
+            weapon1 = false;
+            weapon2 = false;
+            weapon3 = true;
+        }
         //OnGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatisGround);
 
         //Horizontal Movement
@@ -117,16 +141,48 @@ public class movement : MonoBehaviour
 
     void fire()
     {
-        bulletPos = transform.position;
-        if (facingRight)
+
+        if (weapon1)
         {
-            bulletPos += new Vector2(+1f, -0.5f);
-            Instantiate(bulletToRight, bulletPos, Quaternion.identity);
+            bulletPos = transform.position;
+            if (facingRight)
+            {
+                bulletPos += new Vector2(+1f, -0.5f);
+                Instantiate(bulletToRight, bulletPos, Quaternion.identity);
+            }
+            else
+            {
+                bulletPos += new Vector2(-1f, -0.5f);
+                Instantiate(bulletToLeft, bulletPos, Quaternion.identity);
+            }
         }
-        else  
+        if (weapon2)
         {
-            bulletPos += new Vector2(-1f, -0.5f);
-            Instantiate(bulletToLeft, bulletPos, Quaternion.identity);
+            bulletPos = transform.position;
+            if (facingRight)
+            {
+                bulletPos += new Vector2(+1f, -0.5f);
+                Instantiate(bulletToRight2, bulletPos, Quaternion.identity);
+            }
+            else
+            {
+                bulletPos += new Vector2(-1f, -0.5f);
+                Instantiate(bulletToLeft2, bulletPos, Quaternion.identity);
+            }
+        }
+        if (weapon3)
+        {
+            bulletPos = transform.position;
+            if (facingRight)
+            {
+                bulletPos += new Vector2(+1f, -0.5f);
+                Instantiate(bulletToRight3, bulletPos, Quaternion.identity);
+            }
+            else
+            {
+                bulletPos += new Vector2(-1f, -0.5f);
+                Instantiate(bulletToLeft3, bulletPos, Quaternion.identity);
+            }
         }
     }
 

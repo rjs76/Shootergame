@@ -9889,11 +9889,22 @@ MonoBehaviour:
   right: 100
   Jump: 119
   Fire1: 32
+  Firstweapon: 49
+  Secondweapon: 50
+  Thirdweapon: 51
   spawnpoint: {fileID: 1039232692}
   groundCheckPoint: {fileID: 0}
   bulletToRight: {fileID: 1854584023786104291, guid: 12454197508a8304e9b066e6537cecf2,
     type: 3}
   bulletToLeft: {fileID: 3811171057410936007, guid: a8bade38ca2bc6e49b8844c4a1c381c3,
+    type: 3}
+  bulletToRight2: {fileID: 5382407223276846557, guid: 409aa00ea951efd469b666021371ec0a,
+    type: 3}
+  bulletToLeft2: {fileID: 6070522997477389468, guid: 7c4ed27071fee2745ac7000d133fce00,
+    type: 3}
+  bulletToRight3: {fileID: 4685189442357818486, guid: 0495697b22b537e488b12ac783f45663,
+    type: 3}
+  bulletToLeft3: {fileID: 599063251289100878, guid: d8595e85a5ad65242af51d70392b40a2,
     type: 3}
   fireRate: 0.5
 --- !u!4 &1825087964 stripped
@@ -10975,7 +10986,8 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6694911662189759446, guid: edaf4c97305854347bbbba76c8f1b3e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: edaf4c97305854347bbbba76c8f1b3e0, type: 3}
 --- !u!1001 &1453851725511247578
 PrefabInstance:
