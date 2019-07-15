@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class movement : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode Jump;
-
+ 
     public Transform spawnpoint;
 
     public Transform groundCheckPoint;
@@ -77,11 +78,22 @@ public class movement : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            respawn();
+            if (playerlives.health == 0)
+            {
+                respawn();
+            }
         }
         if (collision.gameObject.tag.Equals("Death"))
         {
-            respawn();
+            if (playerlives.health == 0)
+            {
+                respawn();
+            }
+
+        }
+        if (collision.gameObject.tag.Equals("endgoal"))
+        {
+            SceneManager.LoadScene("level2");
         }
         //if (collision.gameObject.tag.Equals("warp"))
         //  {
@@ -106,8 +118,9 @@ public class movement : MonoBehaviour
 
     public void respawn()
     {
-        this.transform.position = spawnpoint.position;
-
+        //this.transform.position = new Vector3(-1.5f, -0.5f, -48.0f);
+        //this.transform.position = spawnpoint.position;
+        SceneManager.LoadScene("level1");
     }
 
 }
