@@ -226,7 +226,8 @@ public class movement : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("endgoal"))
         {
-            SceneManager.LoadScene("level2");
+            SceneManager.LoadScene("playermenu");
+            //SceneManager.LoadScene("level2");
         }
         //if (collision.gameObject.tag.Equals("warp"))
         //  {
