@@ -8,12 +8,19 @@ public class Enemy : MonoBehaviour
     public float Stoppingdistance;
     public float retreatDistance;
 
+    public float timebtwShots;
+    public float startTimeBtwShots;
+
+    public GameObject projectile;
+
     public Transform Player;
 
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        timebtwShots = startTimeBtwShots;
     }
 
     // Update is called once per frame
@@ -32,6 +39,16 @@ public class Enemy : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, Player.position, -speed * Time.deltaTime);
         }
 
+
+        if(timebtwShots <= 0)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            timebtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timebtwShots -= Time.deltaTime;
+        }
 
     }
     /**

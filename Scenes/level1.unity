@@ -11072,6 +11072,10 @@ MonoBehaviour:
   speed: 3
   Stoppingdistance: 5
   retreatDistance: 3
+  timebtwShots: 2
+  startTimeBtwShots: 2
+  projectile: {fileID: 1759143940483587062, guid: 02135f549aacf2b4abd8fd3a693487d0,
+    type: 3}
   Player: {fileID: 1812749649}
 --- !u!1001 &6147020702421843443
 PrefabInstance:
@@ -11145,7 +11149,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7809759193193999581, guid: befe603be5a5ad744a283282deabcf91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: befe603be5a5ad744a283282deabcf91, type: 3}
 --- !u!1001 &7803232385779467313
 PrefabInstance:
