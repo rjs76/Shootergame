@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/** 
+ * Manages the the destructive platforms
+ * @author Riviere Seguie
+ */
 public class platformdestruction : MonoBehaviour
 {
     // Start is called before the first frame update

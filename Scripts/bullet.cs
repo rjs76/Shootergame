@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/** 
+ * holds data and manages how the bullet reacts in terms of damage, speed, and to other objects
+ * @author Riviere Seguie
+ */
 public class bullet : MonoBehaviour
 {
-    public int damage;
-    public float speed;
-    public float velx = 5f;
-    float vely = 6f;
-    Rigidbody2D rgb;
+    public int damage;/**< is for the the bullet damage*/
+    public float speed;/**< is for the the bullet speed*/
+    public float velx = 5f;/**< is for the the bullet velocity in the x direction*/
+    float vely = 6f; /**< is for the the bullet velocity in the y direction*/
+    Rigidbody2D rgb; /**< is for the rigidbody of the bullet*/
 
-    public GameObject platform1;
+    public GameObject platform1;/**< is for the platform to collide with*/
 
     // Start is called before the first frame update
     void Start()

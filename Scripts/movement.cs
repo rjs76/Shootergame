@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Manages player movement  
+ * @author Riviere Seguie
+ */
 public class movement : MonoBehaviour
 {
     public int health;
@@ -151,8 +154,10 @@ public class movement : MonoBehaviour
 
     }
 
-
-
+    /** 
+    * This will fire a bullet depending on the weapon choosen by the player
+    * each bullet ahs its own speed and damage
+    */
     void fire()
     {
 
@@ -250,7 +255,9 @@ public class movement : MonoBehaviour
             OnGround = false;
         }
     }
-
+    /** 
+    * This will send the player back to the starting level when they die/lose
+    */
     public void respawn()
     {
         //this.transform.position = new Vector3(-1.5f, -0.5f, -48.0f);

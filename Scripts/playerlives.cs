@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Holds data and handles the players health. 
+ * @author Riviere Seguie
+ */
 public class playerlives : MonoBehaviour
 {
-    public GameObject heart1, heart2, heart3, gameOver;
-    public static int health;
+    
+    public GameObject heart1, heart2, heart3, gameOver;/**< Game objects for health icons*/
+    public static int health;/**< this is to track the players health*/
 
     void Start()
     {
@@ -17,8 +21,12 @@ public class playerlives : MonoBehaviour
         gameOver.gameObject.SetActive(false);
 
     }
-
-     void Update()
+    // Update is called once per frame
+    /** 
+    * This will update the players health 
+    * If the players health reaches zero it will send it to the "game over" menu
+    */
+    void Update()
     {
         if (health > 3)
             health = 3;
