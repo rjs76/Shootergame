@@ -14,33 +14,37 @@ public class Enemy : MonoBehaviour
     public GameObject projectile;
 
     public Transform Player;
+    private Rigidbody2D rb2d;
 
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-
+       // rb2d = GetComponent<Rigidbody>();
         timebtwShots = startTimeBtwShots;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(transform.position, Player.position)> Stoppingdistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
-        }
-        else if (Vector2.Distance(transform.position, Player.position) < Stoppingdistance && Vector2.Distance(transform.position, Player.position) > retreatDistance)
-        {
-            transform.position = this.transform.position;
-        }
-        else if (Vector2.Distance(transform.position, Player.position)< retreatDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, -speed * Time.deltaTime);
-        }
+      //  rb2d.MovePosition(transform.position + transform.forward * Time.deltaTime);
+
+        //try to move rigid body not vector2 
+        //   if (Vector2.Distance(transform.position, Player.position)> Stoppingdistance)
+        //    {
+        //         transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+        //     }
+        //     else if (Vector2.Distance(transform.position, Player.position) < Stoppingdistance && Vector2.Distance(transform.position, Player.position) > retreatDistance)
+        //     {
+        //         transform.position = this.transform.position;
+        //      }
+        //       else if (Vector2.Distance(transform.position, Player.position)< retreatDistance)
+        //        {
+        //           transform.position = Vector2.MoveTowards(transform.position, Player.position, -speed * Time.deltaTime);
+        //      }
 
 
-        if(timebtwShots <= 0)
+        if (timebtwShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timebtwShots = startTimeBtwShots;

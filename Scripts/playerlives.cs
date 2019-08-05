@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerlives : MonoBehaviour
 {
@@ -43,7 +44,10 @@ public class playerlives : MonoBehaviour
                 heart1.gameObject.SetActive(false);
                 heart2.gameObject.SetActive(false);
                 heart3.gameObject.SetActive(false);
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
+                // buttonM.gameover();
+                SceneManager.LoadScene("gameover");
+                //health += 3;
                 break;
         }
 

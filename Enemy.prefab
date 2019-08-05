@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 488306437445211522}
   - component: {fileID: 9172089554072181025}
   - component: {fileID: 8558167400634868093}
-  - component: {fileID: 7809759193193999581}
+  - component: {fileID: -6148515065854781483}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2339b7dd6732dab4abe9b6a035274a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7809759193193999581
+--- !u!114 &-6148515065854781483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,14 +130,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4352753563351300437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7178dd2ddc477ca46a6a34d2604f32b2, type: 3}
+  m_Script: {fileID: 11500000, guid: f8b65efb288c4624c90cc4b893770359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  Stoppingdistance: 5
-  retreatDistance: 3
-  timebtwShots: 3
-  startTimeBtwShots: 2
-  projectile: {fileID: 1759143940483587062, guid: 02135f549aacf2b4abd8fd3a693487d0,
-    type: 3}
-  Player: {fileID: 0}
+  distance: 5
+  groundDetection: {fileID: 0}

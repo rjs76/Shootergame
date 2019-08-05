@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
+    public int health;
     float velx;
     float vely;
     bool facingRight= true;
@@ -225,7 +226,7 @@ public class movement : MonoBehaviour
 
         }
         if (collision.gameObject.tag.Equals("endgoal"))
-        {
+        { 
             SceneManager.LoadScene("playermenu");
             //SceneManager.LoadScene("level2");
         }

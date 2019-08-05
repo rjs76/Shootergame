@@ -26,6 +26,14 @@ public class buttonM : MonoBehaviour
         SceneManager.LoadScene("controls");
     }
 
+    public void gameover()
+    {
+        SceneManager.LoadScene("gameover");
+    }
+    public void playermenu()
+    {
+        SceneManager.LoadScene("playermenu");
+    }
     public void Quitgame()
     {
         Application.Quit();

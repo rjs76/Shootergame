@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 739875268402393606}
   - component: {fileID: -7196567415279794842}
   - component: {fileID: -5721947430136882927}
+  - component: {fileID: -7077771517620919696}
   m_Layer: 0
   m_Name: shurikenLeft3
-  m_TagString: Untagged
+  m_TagString: blast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab7641eb3c872a40a2da44b0a172735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  speed: 3
   velx: -5
+  platform: {fileID: 8434625976470853434, guid: 76a5b05a163026243b6c2458fe1d7867,
+    type: 3}
 --- !u!50 &-5721947430136882927
 Rigidbody2D:
   serializedVersion: 4
@@ -116,3 +121,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!61 &-7077771517620919696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599063251289100878}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0

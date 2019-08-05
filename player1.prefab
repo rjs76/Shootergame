@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6694911662189759446}
   m_Layer: 0
   m_Name: player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,16 +142,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fbaf7db5d5ee54b811f385af84d8e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   speed: 10
   jumpForce: 5
   OnGround: 1
-  animator: {fileID: 0}
   left: 97
   right: 100
   Jump: 119
+  Fire1: 0
+  Firstweapon: 0
+  Secondweapon: 0
+  Thirdweapon: 0
   spawnpoint: {fileID: 0}
   groundCheckPoint: {fileID: 0}
-  groundCheckRadius: 0
-  whatisGround:
-    serializedVersion: 2
-    m_Bits: 0
+  bulletToRight: {fileID: 0}
+  bulletToLeft: {fileID: 0}
+  bulletToRight2: {fileID: 0}
+  bulletToLeft2: {fileID: 0}
+  bulletToRight3: {fileID: 0}
+  bulletToLeft3: {fileID: 0}
+  fireRate: 0.5
